@@ -1,0 +1,8 @@
+.grid {
+  width: 400px;
+  height: 400px;
+  background: rgb(216, 47, 47);
+  background-image: linear-gradient(hsl(0, 0%, 100%, 0.3) 50%, transparent 0),
+    linear-gradient(90deg, hsl(0, 0%, 100%, 0.3) 50%, transparent 0);
+  background-size: 10% 10%;
+}

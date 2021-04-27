@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+article {
+  padding: 30px;
+}
+
+section {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(204, 204, 204, 0.3);
+}
+
+figure {
+  margin: 20px auto;
+  width: 80%;
+  height: 500px;
+  background: white;
+}
+
+h1 {
+  border-bottom: 1px solid #000;
+  min-width: 400px;
+  line-height: 3em;
+}
+
+h3 {
+  min-width: 400px;
+  color: white;
+  background: hsla(0, 0%, 0%, 0.8);
+  line-height: 2em;
+  text-indent: 1em;
+}
+
+p {
+  margin: 10px 0;
+  min-width: 400px;
+  text-indent: 2rem;
+  overflow: hidden;
+}
