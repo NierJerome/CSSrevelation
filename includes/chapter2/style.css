@@ -83,6 +83,59 @@
   background-image: linear-gradient(90deg, #a18cd1 2px, transparent 0),
     linear-gradient(90deg, #fecfef 20px, transparent 0), linear-gradient(90deg, #f6d365 10px, transparent 0),
     linear-gradient(90deg, #d4fc79 13px, transparent 0);
-    /* 使用质数来实现伪随机 */
+  /* 使用质数来实现伪随机 */
   background-size: 43px 100%, 67px 100%, 17px 100%, 37px 100%;
+}
+
+/* 图片边框 */
+.commonBorder {
+  width: 100px;
+  height: 100px;
+  border: 100px solid;
+  border-image: url(/assets/images/border_2.jpg);
+  border-image-slice: 100 100 100 100 fill;
+  background: #000;
+  background-clip: border-box;
+}
+
+.bgimageBorder {
+  width: 400px;
+  height: calc(400px * 0.8);
+  padding: 16px;
+  border: 32px solid transparent;
+  background: linear-gradient(white, white) padding-box, url(/assets/images/border.jpg) border-box 0 / cover;
+}
+
+.envelop {
+  width: 400px;
+  height: calc(400px * 0.8);
+  padding: 16px;
+  border: 32px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    repeating-linear-gradient(
+        -45deg,
+        red 0,
+        red 12.5%,
+        transparent 0,
+        transparent 25%,
+        #58a 0,
+        #58a 37.5%,
+        transparent 0,
+        transparent 50%
+      )
+      0 /80px 80px;
+}
+
+.titleborder{
+  padding: 10px;
+  border-top: 5px solid transparent;
+  border-image:100% 0 0 linear-gradient(90deg,currentColor 30%,transparent 0) ;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #6CB3FF;
+}
+
+.titleborder:hover{
+  border-top: 10px solid transparent;
+  transition: all linear .1s;
 }
