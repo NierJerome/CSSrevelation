@@ -44,6 +44,45 @@
   height: 400px;
   background: #465c73;
   background-image: linear-gradient(silver 1px, transparent 0), linear-gradient(silver 3px, transparent 0),
-    linear-gradient(45deg, silver 1px, transparent 0), linear-gradient(45deg, silver 3px, transparent 0);
+    linear-gradient(90deg, silver 1px, transparent 0), linear-gradient(90deg, silver 3px, transparent 0);
   background-size: 20px 20px, 60px 60px, 20px 20px, 60px 60px;
+}
+
+.dotBg {
+  width: 400px;
+  height: 400px;
+  background: #000;
+  background-image: radial-gradient(circle, white 6px, transparent 0), radial-gradient(circle, white 6px, transparent 0);
+  background-size: 60px 60px;
+  /*  第二层渐变的偏移是贴片宽高的一半 */
+  background-position: 0 0, 30px 30px;
+}
+
+.svgBg {
+  width: 400px;
+  height: 400px;
+  background: rgb(255, 255, 255)
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill-opacity=".25"><rect x="50" width="50" height="50"/><rect y="50" width="50" height="50"/></svg>');
+  background-size: 30px 30px;
+}
+
+.chessBoard {
+  width: 600px;
+  height: 400px;
+  background: #c7d2e3;
+  background-image: linear-gradient(45deg, #dfe4ff 25%, transparent 0),
+    linear-gradient(225deg, #dfe4ff 25%, transparent 0), linear-gradient(135deg, #dfe4ff 25%, transparent 0),
+    linear-gradient(315deg, #dfe4ff 25%, transparent 0);
+  background-size: 50px 50px;
+  background-position: 1px -25px, -25px 1px, 26px 26px, 0 0;
+}
+
+.randomBg {
+  width: 600px;
+  height: 400px;
+  background-image: linear-gradient(90deg, #a18cd1 2px, transparent 0),
+    linear-gradient(90deg, #fecfef 20px, transparent 0), linear-gradient(90deg, #f6d365 10px, transparent 0),
+    linear-gradient(90deg, #d4fc79 13px, transparent 0);
+    /* 使用质数来实现伪随机 */
+  background-size: 43px 100%, 67px 100%, 17px 100%, 37px 100%;
 }
