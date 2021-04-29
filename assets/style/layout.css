@@ -37,3 +37,7 @@
 .align-end{
   align-items: flex-end;
 }
+
+.bg-gray{
+  background: #C7D2E3;
+}
