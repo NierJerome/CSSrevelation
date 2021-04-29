@@ -95,6 +95,7 @@
   border-image: url(/assets/images/border_2.jpg);
   border-image-slice: 100 100 100 100 fill;
   background: #000;
+  -webkit-background-clip: border-box;
   background-clip: border-box;
 }
 
