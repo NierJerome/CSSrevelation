@@ -1,0 +1,104 @@
+.circle {
+  background: #000;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.half-elliptic {
+  width: 300px;
+  height: 300px;
+  /* 相当于每个角的水平弧度为50%，垂直弧度为100% 1005 0 0  */
+  border-radius: 50%/100% 100% 0 0;
+  background: #000;
+}
+
+.half-half-elliptic {
+  width: 300px;
+  height: 300px;
+  border-radius: 100% 0 0 0;
+  background: #000;
+}
+
+.apple {
+  border-top-color: rgba(255, 255, 255, 0.5);
+  width: 100px;
+  height: 100px;
+  border-radius: 45% 45% 10% 10%/80% 80% 35% 35%;
+  /* box-shadow: 0 10px 10px 0px #527094, 0 0 30px 0px rgb(255, 255, 255) inset; */
+  background: #d4e7f4 url('/assets/images/apple.svg') center/50% no-repeat;
+
+  border-radius: 1.6em 1.6em 1em 1em / 4em 4em 1em 1em;
+  box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em 0.3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em 0.3em,
+    /* inner shadow */ hsl(208, 50%, 55%) 0 0.1em 3px, hsl(208, 50%, 40%) 0 0.3em 1px,
+    /* color border */ rgba(0, 0, 0, 0.2) 0 0.5em 5px;
+}
+
+.quadrilateral {
+  width: 300px;
+  height: 100px;
+  transform: skewX(-30deg);
+  background: #fbbd0a;
+}
+
+.button {
+  width: 100px;
+  height: 60px;
+  background: #fbbd0a;
+  transform: skewX(-45deg);
+}
+
+.button .text {
+  margin: 0 auto;
+  display: block;
+  color: white;
+  transform: skewX(45deg);
+  text-align: center;
+  line-height: 60px;
+}
+
+.button_2 {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  line-height: 60px;
+}
+
+.button_2::after {
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: #6cb3ff;
+  transform: skewX(-45deg);
+  z-index: -1;
+}
+
+.lozenge {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+
+.lozenge > img {
+  /* 需要根据勾股定理放大一定倍数 */
+  transform: rotate(-45deg);
+}
+
+.lozenge_2 {
+  width: 400px;
+  height: 400px;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transition: clip-path .3s;
+}
+
+.lozenge_2:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}

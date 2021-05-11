@@ -11,74 +11,47 @@
   </head>
   <body>
     <article> 
-      <h1>学习CSS揭秘</h1>
-      <section> 
-        <h3>介绍页</h3>
-        <p>介绍页，关于《CSS揭秘》的案例实现</p>
-      </section>
-    </article>
-    <article> 
-      <h1>背景与边框</h1>
-      <section> 
-        <h3>六、复杂的背景团</h3>
-        <p>利用 linear-gradient() 实现横纵条纹，从而实现网格背景</p>
-        <figure class="flex justify-center align-center">
-          <div class="gridBg_1"></div>
-        </figure>
-        <p>利用 repeat-linear-gradient() 实现网格背景</p>
-        <figure class="flex justify-center align-center">
-          <div class="gridBg_2"></div>
-        </figure>
-        <p>实现特殊网格背景</p>
-        <figure class="flex justify-center align-center">
-          <div class="gridBg_3"></div>
-        </figure>
-        <p>圆点阵列</p>
-        <figure class="flex justify-center align-center">
-          <div class="dotBg"></div>
-        </figure>
-        <p>国际象棋棋盘</p>
-        <figure class="flex justify-center align-center">
-          <div class="chessBoard"></div>
-        </figure>
-        <p>拓展: 利用渐变实现砖块背景</p>
-        <figure class="flex justify-center align-center">
-          <div class="brickBg"></div>
-        </figure>
-        <p>未来属性 conic-gradient()
-          <p>锥型渐变，可以简单的制作三角形贴片，减少代码书写</p>
-        </p>
-        <p>实际应用：尽可能使用svg代替复杂图形的实现</p>
-        <figure class="flex justify-center align-center">
-          <div class="svgBg"> </div>
-        </figure>
-        <h3>七、伪随机背景</h3>
-        <p>利用 不同质数的最小公倍数最大的原则，来实现伪随机</p>
-        <figure class="flex justify-center align-center">
-          <div class="randomBg"></div>
-        </figure>
-        <h3>八、图片边框</h3>
-        <p>一般来说可以使用border-image实现图片边框</p>
-        <figure class="flex justify-center align-center">
-          <div class="commonBorder"></div>
-        </figure>
-        <p>通过background-image实现</p>
-        <figure class="flex justify-center align-center">
-          <div class="envelop">
-            <p>一封信</p>
-          </div>
-        </figure>
-        <p>标题导航线实现</p>
-        <figure class="flex justify-center align-center">
-          <div class="titleborder">我是一个标题</div>
-        </figure>
-      </section>
-    </article>
-    <article> 
       <h1>形状</h1>
       <section> 
-        <h3>自适应的椭圆</h3>
-        <p> </p>
+        <h3>九、自适应的椭圆</h3>
+        <p>简单的圆形 利用正方形盒子实现 border-radius 宽高的一半</p>
+        <figure class="flex justify-center align-center">
+          <div class="circle"></div>
+        </figure>
+        <p>border-radius 简写 为所有四个角提供完全不同的水平和垂直半径，方法是在斜杠前指定1～4个值，在斜杠后指定另外1～4个值</p><img src="/assets/images/border-radius.png" title="简写对应表">
+        <p>实现一个自适应的半椭圆(简写属性)</p>
+        <figure class="flex justify-center align-center column">
+          <div class="half-elliptic"></div>
+          <div class="half-half-elliptic"></div>
+        </figure>
+        <p>拓展：糖果按钮的实现</p>
+        <figure class="flex justify-center align-center">
+          <div class="apple"></div>
+        </figure>
+        <h3>十、平行四边形</h3>
+        <p>通过skew()的变形属性来对这个矩形进行斜向拉伸</p>
+        <figure class="flex justify-center align-center">
+          <div class="quadrilateral"></div>
+        </figure>
+        <p>有没有办法只让容器的形状倾斜，而保持其内容不变呢？</p>
+        <p>嵌套元素方案</p>
+        <figure class="flex justify-center align-center">
+          <div class="button"> <span class="text">button</span></div>
+        </figure>
+        <p>伪元素方案</p>
+        <figure class="flex justify-center align-center">
+          <div class="button_2">button 2</div>
+        </figure>
+        <h3>十一、菱形图片</h3>
+        <p>通过潜逃元素实现 rotate() </p>
+        <figure class="flex justify-center align-center">
+          <div class="lozenge flex justify-center align-center"><img src="/assets/images/OIP.jpg" alt=""></div>
+        </figure>
+        <p>使用clip-path 实现菱形</p>
+        <figure class="flex justify-center align-center">
+          <div class="lozenge_2 flex justify-center align-center"><img src="/assets/images/OIP.jpg" alt=""></div>
+        </figure>
+        <h3>十二 切角效果</h3>
       </section>
     </article>
   </body>

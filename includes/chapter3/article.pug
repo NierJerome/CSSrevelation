@@ -1,4 +1,37 @@
 h1 形状
 section 
-  h3 自适应的椭圆
-  p 
+  h3 九、自适应的椭圆
+  p 简单的圆形 利用正方形盒子实现 border-radius 宽高的一半
+  figure(class='flex justify-center align-center')
+    div.circle
+  p border-radius 简写 为所有四个角提供完全不同的水平和垂直半径，方法是在斜杠前指定1～4个值，在斜杠后指定另外1～4个值
+  img(src="/assets/images/border-radius.png", title="简写对应表")
+  p 实现一个自适应的半椭圆(简写属性)
+  figure(class='flex justify-center align-center column')
+    div.half-elliptic
+    div.half-half-elliptic
+  p 拓展：糖果按钮的实现
+  figure(class='flex justify-center align-center')
+    div.apple
+  h3 十、平行四边形
+  p 通过skew()的变形属性来对这个矩形进行斜向拉伸
+  figure(class='flex justify-center align-center')
+    div.quadrilateral
+  p 有没有办法只让容器的形状倾斜，而保持其内容不变呢？
+  p 嵌套元素方案
+  figure(class='flex justify-center align-center')
+    .button 
+      span.text button
+  p 伪元素方案
+  figure(class='flex justify-center align-center')
+    .button_2 button 2
+  h3 十一、菱形图片
+  p 通过潜逃元素实现 rotate() 
+  figure(class='flex justify-center align-center')
+    div(class='lozenge flex justify-center align-center')
+      img(src="/assets/images/OIP.jpg", alt="")
+  p 使用clip-path 实现菱形
+  figure(class='flex justify-center align-center')
+    div(class='lozenge_2 flex justify-center align-center')
+      img(src="/assets/images/OIP.jpg", alt="")
+  h3 十二 切角效果
