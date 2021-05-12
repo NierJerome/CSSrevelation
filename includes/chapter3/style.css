@@ -107,12 +107,51 @@
   padding: 40px;
   width: 300px;
   height: 300px;
-  background: #6CB3FF;
+  background: #6cb3ff;
   /* background: #6CB3FF linear-gradient(135deg, transparent 90%, white 0); */
   clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
-  transition: clip-path .3s;
+  transition: clip-path 0.3s;
 }
 
 .cutCorner:hover {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+}
+
+.cutRadialCorner {
+  width: 300px;
+  height: 100px;
+  background: #6cb3ff;
+  background: radial-gradient(circle at top left, transparent 15px, #6cb3ff 0) top left,
+    radial-gradient(circle at top right, transparent 15px, #6cb3ff 0) top right,
+    radial-gradient(circle at bottom left, transparent 15px, #6cb3ff 0) bottom left,
+    radial-gradient(circle at bottom right, transparent 15px, #6cb3ff 0) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.stamp {
+  width: 300px;
+  height: 100px;
+  background: #6cb3ff;
+  background: repeating-radial-gradient(circle at top, white, white 6px, #6cb3ff 0, #6cb3ff);
+  background-size: 20px;
+}
+
+.cutSvgCorner {
+  box-sizing: border-box;
+  padding: .2em .3em;
+  width: 200px;
+  height: 200px;
+  border: 20px solid transparent;
+  border-image: 1
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" fill="%2358a"><polygon points="0,1 1,0 2,0 3,1 3,2 2,3 1,3 0,2" /></svg>');
+  background: #58a;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  transition: border 1s;
+}
+
+.cutSvgCorner:hover{
+  border-width: 30px ;
+  
 }
