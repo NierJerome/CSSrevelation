@@ -155,3 +155,11 @@
   border-width: 30px ;
   
 }
+
+.trapezium{
+  width: 200px;
+  height: 100px;
+  background: #000;
+  transform: perspective(300px) rotateX(45deg);
+  transform-origin: bottom;
+}
